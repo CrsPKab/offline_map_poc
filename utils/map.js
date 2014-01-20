@@ -29,8 +29,8 @@ function reloadMap(options) {
     if (!MAP) { //initialize map if first time
         MAP = L.map('map', {
             'minZoom': 3,
-            'maxZoom': 17
-        }).setView([38.255, -85.73], 15);
+            'maxZoom': 18
+        }).setView([40.755, -111.868], 15);
     }
     
     //clear out old MAP_CONTROL

@@ -49,7 +49,7 @@ $(document).ready(function() {
 
         $("#download").off("click").on("click", function() {
             var mapboxIDs = getMapIDs();
-            if (mapboxIDs == null) { alert("Enter a MapBox Map ID"); return; } //no ids
+            if (mapboxIDs == null) { alert("Enter a Map ID"); return; } //no ids
             fileUtils.bulkDownload(
                tileUtils.pyramid(mapboxIDs, 40.801, -111.835, {}), //tile urls
                'tiles',
